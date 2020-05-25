@@ -466,22 +466,21 @@ body {
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
-    background: url(../img/bg.png) center no-repeat;
-    background-size: cover;
-}
-
-.wrapper.full {
-    background: url(../img/bg1.png) center no-repeat;
+    min-height: 991px;
+    background: url(../img/inner-bg.png) center no-repeat;
     background-size: cover;
 }
 
 .main-page {
     min-height: 3382px;
+    background: url(../img/bg.png) center no-repeat;
+    background-size: cover;
 }
 
 .main-page.full {
     min-height: 3665px;
+    background: url(../img/bg1.png) center no-repeat;
+    background-size: cover;
 }
 
 .content {
@@ -598,6 +597,22 @@ header {
     background-size: contain;
 }
 
+.menu-links .logout-link {
+	position: absolute;
+    right: 0;
+    padding-right: 20px;
+}
+
+.logout-link::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 14px;
+    height: 14px;
+    background: url(../img/logout-icon.svg) center no-repeat;
+    background-size: contain;
+}
+
 .main-block {
     min-height: 550px;
 }
@@ -651,15 +666,27 @@ header {
 
 .step1 {
     max-width: 186px;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
 }
 
 .step2 {
     max-width: 207px;
+    margin-bottom: 30px;
 }
 
 .step3 {
-    max-width: 281px;
+    max-width: 318px;
+}
+
+.main-block .btn-wrapper {
+	position: relative;
+}
+
+.main-block .btn {
+	position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
 }
 
 .btn {
@@ -1488,103 +1515,60 @@ table {
 }
 
 table th {
-  text-align: left;
-  font-size: 14px;
-  font-weight: normal;
-  padding: 7px 0;
-  line-height: 1;
-}
-
-.code-wrap table th {
-  padding: 10px 10px 30px 0;
-}
-
-table th span {
-  margin-left: 5px;
+	font-weight: normal;
+	text-align: left;
+	font-size: 14px;
+	line-height: 1;
+	color: #27C2EE;
+	padding: 7px 0;
 }
 
 table th span,
 table th img {
-  vertical-align: middle;
+	vertical-align: middle;
+}
+
+table tr:first-child td {
+	border-top: 0;
+}
+
+table tr:last-child td {
+	border-bottom: 0;
 }
 
 table td {
-  font-size: 21px;
-  padding: 10px 0;
-  position: relative;
-}
-
-.code-wrap table td {
-  padding: 15px 30px 15px 0;
-}
-
-table td.success {
-  color: #ffffff;
-}
-
-table td.rejected {
-  color: #eb008b;
-}
-
-table td.rejected span {
-  vertical-align: middle;
-}
-
-table td.rejected img {
-  cursor: pointer;
-  vertical-align: middle;
-}
-
-table td.onCheck {
-  color: #d1e6ef;
+	font-size: 21px;
+	color: #1A4384;
+	text-align: left;
+	border-top: 0;
+	padding: 10px 0;
+	position: relative;
 }
 
 .winners {
-  height: 350px;
-  max-width: 810px;
-  margin: auto;
+	height: 350px;
+	max-width: 810px;
+	margin: auto;
 }
 
-.winners th {
-  font-size: 14px;
-  color: #27C2EE;
-  text-align: left;
+.prize-column {
+	font-size: 16px;
 }
 
-.winners td {
-  font-size: 21px;
-  color: #1A4384;
-  text-align: left;
-  border-top: 0;
+.prize-column img {
+	vertical-align: middle;
 }
 
-.winners tr:first-child td {
-  border-top: 0;
-}
-
-.winners tr:last-child td {
-  border-bottom: 0;
-}
-
-.winners .prize-column {
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.winners .prize-column img {
-  vertical-align: middle;
-}
-
-.winners .prize-column span {
-  display: inline-block;
-  max-width: 120px;
-  vertical-align: middle;
-  margin-left: 10px;
+.prize-column span {
+	display: inline-block;
+	max-width: 120px;
+	vertical-align: middle;
+	margin-left: 10px;
 }
 
 .iframe-wrap,
 .iframe-wrap iframe {
-    scrollbar-width: none;
+	scrollbar-width: none;
 }
 
 .iframe-wrap {
@@ -1597,6 +1581,102 @@ table td.onCheck {
     height: 100vh;
     max-height: 340px;
     width: 100%;
+}
+
+.lk-block {
+	margin-top: 88px;
+}
+
+.profile-wrapper {
+	width: 875px;
+	height: 145px;
+	margin: 0 auto 56px;
+	padding: 26px 20px 20px 70px;
+	background: url(../img/profile-bg.svg) center no-repeat;
+	background-size: contain;
+}
+
+.profile-line {
+	display: flex;
+}
+
+.profile-line:nth-child(1) {
+	margin-bottom: 16px;
+}
+
+.profile-field {
+	width: 260px;
+}
+
+.profile-label {
+	font-size: 14px;
+	line-height: 17px;
+	color: #27C2EE;
+}
+
+.profile-name {
+	max-width: 260px;
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #023F85;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.profile-fio {
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: 0.01em;
+}
+
+.lk-table {
+	height: 230px;
+    max-width: 600px;
+    margin: 36px auto 58px;
+}
+
+.lk-table.scroll-wrapper table {
+    padding-right: 20px;
+}
+
+.check-preview {
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	border-radius: 50px;
+	border: 2px solid #fff;
+}
+
+.check-status {
+	width: 150px;
+}
+
+.win-prize-column {
+	width: 135px;
+}
+
+.win-prize-column img {
+	vertical-align: middle;
+}
+
+.win-prize-column a {
+	font-size: 17px;
+	display: inline-block;
+	max-width: 100px;
+	vertical-align: middle;
+	margin-left: 10px;
+	color: #27C2EE;
+}
+
+.rejected .check-preview {
+	border-color: #DD181F;
+}
+
+.rejected a {
+	color: #DD181F;
 }
 
 @media (min-width: 1930px) {
@@ -1661,21 +1741,27 @@ table td.onCheck {
 
 @media (max-width: 1000px) {
     .wrapper {
-        background: url(../img/bg-mob.png) center no-repeat;
-        background-size: cover;
-    }
-
-    .wrapper.full {
-        background: url(../img/bg1-mob.png) center no-repeat;
+    	min-height: 100%;
+        background: url(../img/inner-bg-mob.png) center no-repeat;
         background-size: cover;
     }
 
     .main-page {
         min-height: 3861px;
+        background: url(../img/bg-mob.png) center no-repeat;
+        background-size: cover;
     }
 
     .main-page.full {
         min-height: 4290px;
+        background: url(../img/bg1-mob.png) center no-repeat;
+        background-size: cover;
+    }
+
+    .lk-page {
+    	min-height: 1153px;
+    	background: url(../img/lk-bg-mob.png) center no-repeat;
+        background-size: cover;
     }
 
     .container {
@@ -1683,6 +1769,11 @@ table td.onCheck {
     }
 
     .logo {
+    	display: none;
+    }
+
+    .main-page .logo {
+    	display: block;
         top: 60px;
         left: 0;
         right: 0;
@@ -1698,6 +1789,11 @@ table td.onCheck {
         background: url(../img/burger.svg) center no-repeat;
         background-size: contain;
         z-index: 11;
+    }
+
+    .lk-page .burger {
+    	background: url(../img/burger-yellow.svg) center no-repeat;
+        background-size: contain;
     }
 
     .burger.active {
@@ -1779,6 +1875,18 @@ table td.onCheck {
         background-size: contain;
     }
 
+    .menu-links .logout-link {
+    	position: relative;
+    }
+
+    .logout-link::before {
+	    right: 50px;
+	    width: 20px;
+	    height: 32px;
+	    background: url(../img/logout-icon-mob.svg) center no-repeat;
+	    background-size: contain;
+    }
+
     .main-block {
         min-height: 1100px;
     }
@@ -1820,10 +1928,15 @@ table td.onCheck {
         margin: auto;
     }
 
+    .main-block .btn {
+    	position: relative;
+    	top: auto;
+    }
+
     .steps {
         max-width: 345px;
         flex-direction: column;
-        margin-top: 200px;
+        margin-top: 230px;
     }
 
     .step1 {
@@ -1833,10 +1946,6 @@ table td.onCheck {
     .step2 {
         max-width: 220px;
         margin-bottom: 28px;
-    }
-
-    .step3 {
-        max-width: 252px;
     }
 
     .prizes-block {
@@ -1954,6 +2063,65 @@ table td.onCheck {
 
     .winners .prize-column span {
         margin-left: 0;
+    }
+
+    .lk-block {
+    	margin-top: 66px;
+    }
+
+    .profile-wrapper {
+		position: relative;
+		width: 100%;
+		height: 250px;
+	    margin: 0 auto 80px;
+    	padding: 0 0 0 36px;
+    }
+
+    .profile-line {
+    	flex-direction: column;
+    	margin-bottom: 0;
+    }
+
+    .profile-field {
+	    width: 100%;
+	    margin-bottom: 12px;
+	}
+
+    .logout {
+    	position: absolute;
+    	bottom: 0;
+    	right: 0;
+    	font-size: 14px;
+    	color: #27C2EE;
+    	padding-right: 10px;
+    }
+
+    .logout::after {
+    	content: '';
+    	position: absolute;
+    	top: 0;
+    	bottom: 0;
+		right: 0;
+	    width: 7px;
+	    height: 10px;
+	    margin: auto;
+	    background: url(../img/logout-mini.svg) center no-repeat;
+	    background-size: contain;
+    }
+
+    .check-column {
+    	display: flex;
+	    align-items: center;
+	    font-size: 18px;
+    }
+
+    .check-preview {
+    	margin-right: 10px;
+    }
+
+    .win-prize-column a {
+    	font-size: 16px;
+    	max-width: 66px;
     }
 }
 

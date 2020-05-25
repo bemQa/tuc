@@ -1666,12 +1666,12 @@ table td.onCheck {
     }
 
     .wrapper.full {
-        background: url(../img/bg-mob.png) center no-repeat;
+        background: url(../img/bg1-mob.png) center no-repeat;
         background-size: cover;
     }
 
     .main-page {
-        min-height: 4290px;
+        min-height: 3861px;
     }
 
     .main-page.full {

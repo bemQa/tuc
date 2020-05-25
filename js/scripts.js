@@ -51,6 +51,7 @@ $(document).ready(function () {
     }
 
     $('.table-wrapper').scrollbar();
+    $('.faq-wrap').scrollbar();
 
     function maskInit() {
         $(".phone-mask").inputmask({
@@ -198,4 +199,27 @@ $(document).ready(function () {
             }
         });
     }
+
+    function openAccordion() {
+        var wrap = $('.accordion-wrap');
+        var accordion = wrap.find('.accordion-title');
+
+        accordion.on('click', function () {
+          var $this = $(this);
+          var $parent = $(this).parent();
+          var content = $this.next();
+
+          if (content.is(':visible')) {
+            $this.removeClass('active');
+            $parent.removeClass('active');
+            content.slideUp('fast');
+          } else {
+            $this.addClass('active');
+            $parent.addClass('active');
+            content.slideDown('fast');
+          }
+
+        });
+    }
+    openAccordion();
 });

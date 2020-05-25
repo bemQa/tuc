@@ -483,6 +483,12 @@ body {
     background-size: cover;
 }
 
+.cookies-page {
+	min-height: 2643px;
+    background: url(../img/cookies-bg.png) center no-repeat;
+    background-size: cover;
+}
+
 .content {
     flex: 1 0 auto;
     overflow: hidden;
@@ -1786,9 +1792,48 @@ table td {
 	margin-top: 10px;
 }
 
+.cookies-block {
+	margin-top: 110px;
+}
+
+.cookies-block .title {
+	margin-bottom: 40px;
+}
+
+.cookies-block p {
+    font-size: 21px;
+    line-height: 152%;
+    margin: 20px 0;
+}
+
+.main-cookie-h3,
+.main-cookie-h2 {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.cookie-text-ul {
+    font-size: 21px;
+    line-height: 152%;
+    padding-left: 50px;
+    list-style: square;
+}
+
+.cookie-text-ul li {
+    margin: 20px 0;
+}
+
+.cookie-preview {
+	max-width: 700px;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
 @media (min-width: 1930px) {
     .wrapper {
-        background-size: 100% 100%;
+    	min-height: 100%;
+        background-size: 100% 100% !important;
     }
 }
 
@@ -1876,6 +1921,12 @@ table td {
     	background: url(../img/faq-bg-mob.png) center no-repeat;
         background-size: cover;
     }
+
+    .cookies-page {
+		min-height: 3542px;
+	    background: url(../img/cookies-bg-mob.png) center no-repeat;
+	    background-size: cover;
+	}
 
     .container {
         max-width: 375px;
@@ -2289,6 +2340,23 @@ table td {
 	.error-desc + .error-text {
 		margin-top: 20px;
 	}
+
+	.cookies-block {
+		margin-top: 60px;
+	}
+
+	.cookies-block .title {
+		margin-bottom: 18px;
+	}
+
+	.cookies-block p {
+		font-size: 18px;
+	}
+
+	.cookie-text-ul {
+		font-size: 18px;
+		padding-left: 20px;
+	}
 }
 
 @media (max-width: 370px) {
@@ -2303,4 +2371,14 @@ table td {
     .title {
         font-size: 38px;
     }
+
+    .cookies-block p,
+    .cookie-text-ul {
+	    font-size: 17px;
+	}
+
+	.cookies-block p,
+	.cookie-text-ul li {
+	    margin: 15px 0;
+	}
 }

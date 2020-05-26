@@ -1,0 +1,303 @@
+@font-face {
+    font-family: 'Peach Milk 2.0';
+    src: url('https://tuc.promo/fonts/PeachMilk20.eot');
+    src: url('https://tuc.promo/fonts/PeachMilk20.eot?#iefix') format('embedded-opentype'),
+        url('https://tuc.promo/fonts/PeachMilk20.woff2') format('woff2'),
+        url('https://tuc.promo/fonts/PeachMilk20.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Din Text Cond Pro';
+    src: url('https://tuc.promo/fonts/PFDinTextCondPro-Bold.eot');
+    src: url('https://tuc.promo/fonts/PFDinTextCondPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://tuc.promo/fonts/PFDinTextCondPro-Bold.woff2') format('woff2'),
+        url('https://tuc.promo/fonts/PFDinTextCondPro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Din Text Cond Pro';
+    src: url('https://tuc.promo/fonts/PFDinTextCondPro-BoldItalic.eot');
+    src: url('https://tuc.promo/fonts/PFDinTextCondPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('https://tuc.promo/fonts/PFDinTextCondPro-BoldItalic.woff2') format('woff2'),
+        url('https://tuc.promo/fonts/PFDinTextCondPro-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PF Din Text Cond Pro';
+    src: url('https://tuc.promo/fonts/PFDinTextCondPro-Light.eot');
+    src: url('https://tuc.promo/fonts/PFDinTextCondPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('https://tuc.promo/fonts/PFDinTextCondPro-Light.woff2') format('woff2'),
+        url('https://tuc.promo/fonts/PFDinTextCondPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Din Text Cond Pro';
+    src: url('https://tuc.promo/fonts/PFDinTextCondPro-Regular.eot');
+    src: url('https://tuc.promo/fonts/PFDinTextCondPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('https://tuc.promo/fonts/PFDinTextCondPro-Regular.woff2') format('woff2'),
+        url('https://tuc.promo/fonts/PFDinTextCondPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Din Text Cond Pro';
+    src: url('https://tuc.promo/fonts/PFDinTextCondPro-Italic.eot');
+    src: url('https://tuc.promo/fonts/PFDinTextCondPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('https://tuc.promo/fonts/PFDinTextCondPro-Italic.woff2') format('woff2'),
+        url('https://tuc.promo/fonts/PFDinTextCondPro-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PF Din Text Cond Pro';
+    src: url('https://tuc.promo/fonts/PFDinTextCondPro-Medium.eot');
+    src: url('https://tuc.promo/fonts/PFDinTextCondPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('https://tuc.promo/fonts/PFDinTextCondPro-Medium.woff2') format('woff2'),
+        url('https://tuc.promo/fonts/PFDinTextCondPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none
+}
+
+body {
+    font-family: 'PF Din Text Cond Pro';
+    font-weight: normal;
+    font-style: normal;
+    background-color: #FFE303;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: content-box;
+    height: 100%;
+    color: #004F91;
+}
+
+.container.uf-container.container--custom {
+    color: #004F91;
+    font-size: 19px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    box-sizing: content-box;
+    padding: 0;
+}
+
+.container.uf-container.container--custom::-webkit-scrollbar {
+    width: 0;
+}
+
+.container-tutorial__text {
+    font-family: 'PF Din Text Cond Pro';
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 21px;
+    /*color: #0878CA;*/
+}
+
+.dropzone.dropzone--custom.dz-clickable {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    padding: 0;
+    min-height: 100px;
+
+}
+
+.dropzone .dz-preview.dz-image-preview {
+    margin: 16px auto;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+@media screen and (max-width:768px) {
+    .dropzone .dz-preview.dz-image-preview {
+        width: 200px;
+    }
+}
+
+.dropzone .dz-preview .dz-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 0;
+}
+
+.dropzone .dz-preview .dz-remove {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-family: 'Peach Milk 2.0';
+    font-size: 18px;
+    font-weight: normal;
+    background-color: #27C2EE;
+    border: 0;
+    box-shadow: 4px 4px 0px #004F91;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding: 0;
+    border-radius: 0;
+    z-index: 21;
+    color: #fff;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.dropzone .dz-preview .dz-remove:hover {
+    background-color: #278EEE;
+}
+
+.uf-button-wrapper.button-wrapper--custom {
+    text-align: center
+}
+
+.uf-button-submit.button-submit--custom {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 230px;
+    height: 47px;
+    font-family: 'Peach Milk 2.0';
+    font-size: 22px;
+    line-height: 1;
+    letter-spacing: 1px;
+    margin: auto;
+    padding: 16px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #27C2EE;
+    box-shadow: 4px 4px 0px #004F91;
+    transition: all .3s linear;
+    overflow: hidden;
+    opacity: 1;
+    z-index: 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.uf-button-submit.button-submit--custom:hover,
+.uf-button-submit.button-submit--custom:focus {
+    background: #278EEE;
+}
+
+.uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.dropzone.dz-started .dz-message span,
+.uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom button {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 230px;
+    height: 47px;
+    font-family: 'Peach Milk 2.0';
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 1;
+    letter-spacing: 1px;
+    margin: auto;
+    padding: 16px 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #004F91;
+    background: #fff;
+    box-shadow: 4px 4px 0px #004F91;
+    transition: all .3s linear;
+    overflow: hidden;
+    opacity: 1;
+    z-index: 0;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.dropzone.dz-started .dz-message span:hover,
+.uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom button:hover {
+    color: #fff;
+    background: #278EEE;
+}
+
+.uf-controls-wrapper {
+    margin-top: 20px;
+}
+
+.uf-controls-wrapper .form-control {
+    max-width: 240px;
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    padding-left: 20px !important;
+    margin: 10px auto;
+    font-family: 'PF Din Text Cond Pro';
+    font-size: 18px;
+    line-height: 1;
+    color: #004F91;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    transition: all .2s linear;
+    box-sizing: border-box;
+}
+
+.input-group.date {
+    /*overflow: hidden;*/
+    margin: 10px auto;
+    width: 100%;
+    min-width: 200px;
+    max-width: 240px;
+}
+
+.input-group.date input {
+    margin: 0;
+    min-width: 200px;
+}
+
+.input-group.date .input-group-addon {
+    border-radius: 0;
+    border: none;
+}
+
+.bootstrap-datetimepicker-widget {
+    z-index: 9999;
+    background: #fefefe;
+    color: #000;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+    width: 17em;
+}

@@ -590,6 +590,9 @@ header {
 }
 
 .lk-link {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
     padding-left: 20px;
 }
 
@@ -598,7 +601,7 @@ header {
     position: absolute;
     left: 0;
     width: 10px;
-    height: 18px;
+    height: 14px;
     background: url(../img/login-icon.svg) center no-repeat;
     background-size: contain;
 }
@@ -650,6 +653,7 @@ header {
     line-height: 1;
     letter-spacing: 1px;
     transform: rotate(-2deg);
+    padding-top: 4px;
 }
 
 .rf span {
@@ -723,6 +727,13 @@ header {
     letter-spacing: 1px;
     color: #fff;
     z-index: 1;
+}
+
+@supports (-webkit-touch-callout: none) {
+	.btn span,
+	.menu-btn span {
+		padding-top: 2px;
+	}
 }
 
 .menu-btn span {
@@ -1372,6 +1383,7 @@ span.error {
 }
 
 .restore-link-wrapper {
+	margin-top: 2px;
     margin-left: 22px;
     margin-bottom: 15px;
 }
@@ -1461,7 +1473,12 @@ span.error {
 }
 
 .week-winners .select2-container--default .select2-selection--single .select2-selection__rendered {
+	color: #27C2EE;
     padding-right: 6px;
+}
+
+.week-winners .select2-container--open.select2-container--default .select2-selection--single .select2-selection__rendered {
+	color: #1A4384;
 }
 
 .week-winners .select2-container--default .select2-selection--single .select2-selection__arrow {
@@ -1474,6 +1491,10 @@ span.error {
 .week-winners .select2-container--default .select2-selection--single .select2-selection__arrow b {
     width: 8px;
     height: 6px;
+    background: url(../img/arrow-down-lightblue.svg) center no-repeat;
+}
+
+.week-winners .select2-container--open.select2-container--default .select2-selection--single .select2-selection__arrow b {
     background: url(../img/arrow-down-blue.svg) center no-repeat;
 }
 
@@ -1491,6 +1512,7 @@ span.error {
 }
 
 .winners-input input:not([type="checkbox"]) {
+	height: 50px;
     border: 2px solid #E5E5E5;
 }
 
@@ -1889,6 +1911,10 @@ table td {
     .tuc4 {
         right: 850px;
     }
+
+    .full .tuc4 {
+	    top: 2700px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -1953,6 +1979,11 @@ table td {
         background: url(../img/burger.svg) center no-repeat;
         background-size: contain;
         z-index: 11;
+    }
+
+    .main-page .burger,
+    .main-page .menu-links {
+    	position: fixed;
     }
 
     .lk-page .burger {
@@ -2031,6 +2062,10 @@ table td {
         font-size: 34px;
     }
 
+    .lk-link {
+    	padding-left: 40px;
+    }
+
     .lk-link::before {
         left: 10px;
         width: 18px;
@@ -2076,6 +2111,7 @@ table td {
         text-align: center;
         transform: rotate(-5deg);
         margin-top: 12px;
+        padding-top: 0;
     }
 
     .rf span {
@@ -2195,11 +2231,18 @@ table td {
         right: auto;
     }
 
+    .week-winners {
+    	max-width: 300px;
+    	width: 100%;
+    	justify-content: space-between;
+    }
+
     .week-phone-winners {
         flex-direction: column;
     }
 
     .winners-input {
+    	max-width: 300px;
         margin-bottom: 30px !important;
         order: -1;
     }
@@ -2213,6 +2256,7 @@ table td {
     }
 
     .winners {
+    	max-width: 300px;
         height: 500px;
     }
 
@@ -2271,6 +2315,10 @@ table td {
 	    margin: auto;
 	    background: url(../img/logout-mini.svg) center no-repeat;
 	    background-size: contain;
+    }
+
+    .lk-table th.mobile-visible {
+    	padding-left: 15px;
     }
 
     .check-column {

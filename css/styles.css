@@ -606,6 +606,12 @@ header {
     background-size: contain;
 }
 
+.logout-form {
+	position: absolute;
+    top: 4px;
+    right: 0;
+}
+
 .menu-links .logout-link {
 	position: absolute;
     right: 0;
@@ -1325,11 +1331,20 @@ span.error {
     background-size: contain;
 }
 
+.checkbox-wrapper span.error {
+	display: none !important;
+}
+
 .input-field input.error:not([type="checkbox"]),
 .input-field textarea.error,
 .input-field select.error + .select2-container .select2-selection--single {
     color: #DD181F;
     border-color: #DD181F;
+}
+
+.input-field input.error[type="checkbox"] ~ .checkbox-text,
+.input-field input.error[type="checkbox"] ~ .checkbox-text a {
+	color: #DD181F;
 }
 
 .clock-text {
@@ -2074,12 +2089,20 @@ table td {
         background-size: contain;
     }
 
+    .logout-form {
+    	position: relative;
+	    top: auto;
+	    right: auto;
+        margin: 10px auto;
+    }
+
     .menu-links .logout-link {
     	position: relative;
+    	margin: 0;
     }
 
     .logout-link::before {
-	    right: 50px;
+	    right: -15px;
 	    width: 20px;
 	    height: 32px;
 	    background: url(../img/logout-icon-mob.svg) center no-repeat;

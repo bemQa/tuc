@@ -1703,6 +1703,7 @@ table td {
 }
 
 .win-prize-column img {
+	max-width: 30px;
 	vertical-align: middle;
 }
 

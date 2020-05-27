@@ -1686,6 +1686,11 @@ table td {
     padding-right: 20px;
 }
 
+.lk-table table td:nth-child(1),
+.lk-table table td:nth-child(2) {
+	width: 130px;
+}
+
 .check-preview {
 	width: 50px;
 	height: 50px;
@@ -2355,9 +2360,14 @@ table td {
     	margin-right: 10px;
     }
 
+    .win-prize-column {
+    	width: 110px;
+    }
+
     .win-prize-column a {
     	font-size: 16px;
     	max-width: 66px;
+    	margin-left: 5px;
     }
 
     .faq-block {

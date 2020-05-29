@@ -1610,6 +1610,10 @@ table td {
 	margin-left: 10px;
 }
 
+#check-upload .popup__wrap {
+    padding: 50px 0 30px;
+}
+
 .iframe-wrap,
 .iframe-wrap iframe {
 	scrollbar-width: none;
@@ -1617,13 +1621,13 @@ table td {
 
 .iframe-wrap {
     height: 100%;
-    min-height: 340px;
+    min-height: 400px;
     width: 100%;
 }
 
 .iframe-wrap iframe {
     height: 100vh;
-    max-height: 340px;
+    max-height: 400px;
     width: 100%;
 }
 

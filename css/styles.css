@@ -882,8 +882,8 @@ header {
 }
 
 .products {
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;
+    justify-content: space-between;*/
     max-width: 1000px;
     width: 100%;
     margin: 0 auto 50px;

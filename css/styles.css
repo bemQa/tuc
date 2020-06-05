@@ -733,6 +733,7 @@ header {
     letter-spacing: 1px;
     color: #fff;
     z-index: 1;
+    pointer-events: none;
 }
 
 @supports (-webkit-touch-callout: none) {

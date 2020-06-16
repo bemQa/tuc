@@ -1878,6 +1878,38 @@ table td {
 	margin-bottom: 30px;
 }
 
+.btn-link {
+	display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 230px !important;
+    height: 47px !important;
+    font-family: 'Peach Milk 2.0';
+    font-size: 22px !important;
+    line-height: 1 !important;
+    letter-spacing: 1px;
+    margin: auto;
+    padding: 16px 0 !important;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff !important;
+    background: #27C2EE;
+    box-shadow: 4px 4px 0px #004F91;
+    transition: all .3s linear;
+    overflow: hidden;
+    opacity: 1;
+    z-index: 0;
+    border: none !important;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-link:hover {
+	background: #278EEE !important;
+}
+
 @media (min-width: 1930px) {
     .wrapper {
     	min-height: 100%;

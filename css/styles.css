@@ -773,7 +773,7 @@ header {
 }
 
 .btn.disabled,
-.mwnu-btn.disabled {
+.menu-btn.disabled {
     opacity: .6;
     pointer-events: none;
 }
